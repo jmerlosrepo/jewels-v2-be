@@ -9,6 +9,9 @@ app.get('/getjewels', (req, res) => {
         if (err) throw err;
         res.send(JSON.parse(data));
     })
+});
+;app.get('/test', (req, res) => {
+    res.send('HOLA');
 })
 
 app.listen(PORT, () => {
